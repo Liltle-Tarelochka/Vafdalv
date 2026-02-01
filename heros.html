@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Персонажі Vafdalv</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Загальні стилі */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c2c2c;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            margin-left: 15px;
+            color: #f5d742;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f5d742;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: #f5d742;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(245, 215, 66, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 1 / 1; /* Робить картинку квадратною */
+            object-fit: cover;   /* Обрізає зайве без розтягування */
+        }
+
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.4rem;
+            color: #f5d742;
+        }
+
+        .card-content p {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        footer {
+            background-color: #2c2c2c;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="flag.jpg" alt="Логотип Vafdalv">
+        <h1>Персонажі Vafdalv</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="heros.html">Персонажі</a>
+            <a href="map.html">Мапа</a>
+            <a href="religies.html">Про світ</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Чоловіки -->
+        <section class="Чоловіки">
+            <h2>Чоловіки</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="2.jpg" alt="Ім'я персонажа">
+                    <div class="card-content">
+                        <h3>Алекс</h3>
+                        <p>Вік: 21</p>
+                        <p>Вміє бачити думки людей</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="1.jpg" alt="Ім'я персонажа">
+                    <div class="card-content">
+                        <h3>Саша</h3>
+                        <p>Вік: 20</p>
+                        <p>Вміє зповільнювати час</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Жінки -->
+        <section class="Жінки">
+            <h2>Жінки</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="3.jpg" alt="Ім'я персонажа">
+                    <div class="card-content">
+                        <h3>Вероніка</h3>
+                        <p>Вік: 17</p>
+                        <p>Може закохувати в себе людей</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="4.jpg" alt="Ім'я персонажа">
+                    <div class="card-content">
+                        <h3>Аліса</h3>
+                        <p>Вік: 20</p>
+                        <p>Має здібності телекінезу</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Vafdalv. Всі права захищені.</p>
+        <p>Автор сайту: Алеся</p>
+        <p>Контактна інформація: email@example.com</p>
+    </footer>
+</body>
+</html>
