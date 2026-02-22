@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Релігії Vafdalv</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c2c2c;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 50px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        header img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            margin-left: 15px;
+            color: #f5d742;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f5d742;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: #f5d742;
+            margin-bottom: 20px;
+        }
+
+        .religion {
+            background-color: #2c2c2c;
+            border: 1px solid #444;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .religion:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(245, 215, 66, 0.5);
+        }
+
+        .religion h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: #f5d742;
+            margin-bottom: 10px;
+        }
+
+        .religion p {
+            color: #ddd;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #2c2c2c;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            border-top: 1px solid #444;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="flag.jpg" alt="Логотип Vafdalv">
+        <h1>Релігії Vafdalv</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="heros.html">Персонажі</a>
+            <a href="map.html">Мапа</a>
+            <a href="religies.html">Про світ</a>
+        </nav>
+    </header>
+
+<main>
+    <section class="religions">
+        <h2>Основна релігія Вафдалву</h2>
+
+        <div class="religion">
+            <h3>Віра в Єдиного Творця</h3>
+            <p>
+                Ця релігія будується на поклонінні єдиному творцю — Заку. 
+                Він створив цей світ і керує всіма його життями. За легендами, 
+                раніше люди могли спілкуватися з ним напряму, але після одного 
+                інциденту з підступною людиною вони втратили цей зв’язок назавжди.
+            </p>
+        </div>
+
+        <div class="religion">
+            <h3>Інцидент</h3>
+            <p>
+                Інцидент стався 3017 років тому, коли Зак ще мав довіру та прямий зв’язок з людьми. 
+                Одного дня він запримітив миловидну жінку на ім’я Адріана. 
+                Вона настільки сподобалась йому, що він обрав її нести людям його проповіді.
+            </p>
+            <p>
+                Проте Адріана виявилась нечистою у своїх намірах — вона прагнула влади. 
+                Замість того щоб передавати людям істинне вчення Зака, 
+                вона наказувала їм чинити жахливі речі: жертвоприношення, залякування, насилля та інші злочини.
+            </p>
+            <p>
+                Коли Зак дізнався про це, він був глибоко засмучений, розгніваний 
+                і найбільше — розчарований. Тож він обірвав прямий зв’язок із людьми 
+                та пустив по світу невзгоди, щоб вони назавжди пам’ятали про скоєне.
+            </p>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <p>© 2026 Vafdalv. Всі права захищені.</p>
+        <p>Автор сайту: Алеся</p>
+        <p>Контактна інформація: email@example.com</p>
+    </footer>
+</body>
+</html>
